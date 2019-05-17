@@ -4,33 +4,41 @@ import Particles from "react-particles-js";
 export default class ParticleContainer extends Component {
   render() {
     return (
-      <Particles
-        params={{
-          particles: {
-            line_linked: {
-              color: "#FFFFFF"
+      <div style={styles.root}>
+        <Particles
+          params={{
+            particles: {
+              line_linked: {
+                color: "#FFFFFF"
+              },
+              number: {
+                value: 150
+              },
+              size: {
+                value: 5
+              }
             },
-            number: {
-              value: 150
-            },
-            size: {
-              value: 5
-            }
-          },
-          interactivity: {
-            events: {
-              onhover: {
-                enable: true,
-                mode: "repulse"
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse"
+                }
               }
             }
-          }
-        }}
-        style={{
-          width: "100%",
-          background: "var(--mainViolet)"
-        }}
-      />
+          }}
+        />
+      </div>
     );
   }
 }
+const styles = {
+  root: {
+    height: "100vh",
+    width: "100vw",
+    background: "#c4e0e5",
+    position: "fixed",
+    margin: "0",
+    padding: "0"
+  }
+};
