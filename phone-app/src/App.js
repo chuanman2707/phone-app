@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import Details from "./components/Details";
 import ParticleContainer from "./components/ParticleContainer";
 import Default from "./components/Default";
